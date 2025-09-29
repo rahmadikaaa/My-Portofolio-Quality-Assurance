@@ -1,0 +1,123 @@
+# Portofolio Quality Assurance - Rahmadika Tri Putera
+> Dokumen ini dibuat sebagai respons terhadap lowongan **MIS QA Staff** di **PT Novell Pharmaceutical Laboratories**. Portofolio ini mendemonstrasikan kemampuan saya dalam membuat skenario pengujian, pemahaman SQL Query, dan analisis diagram sistem.
+
+**Kontak:** [LinkedIn](https://www.linkedin.com/in/rahmadikaaa) | [GitHub](https://github.com/rahmadikaaa) | [rahmadika.putera@gmail.com](mailto:rahmadika.putera@gmail.com)
+
+---
+
+## Ringkasan Profesional
+Profesional Quality Assurance yang berorientasi pada detail dengan pengalaman komprehensif dalam pengujian manual dan dasar-dasar automasi. 
+Terampil dalam merancang test case, mengeksekusi pengujian fungsional & API, serta melakukan pelacakan bug (bug tracking). 
+Mampu memanfaatkan SQL untuk validasi data di sisi backend dan memahami alur kerja SDLC untuk memastikan produk berkualitas tinggi.
+Memiliki pengetahuan pada pemanfaatan AI dan automasi untuk meningkatkan efisiensi dan akurasi pengujian.
+
+---
+
+### Daftar Proyek Portofolio
+1.  [Proyek 1: Dokumentasi skenario pengujian untuk Negative Testing pada modul Customer, Prospek, Quotation, Approval, dan Sales Order di sistem CRM/ERP. ]
+2.  [Proyek 2: Validasi Data Pasca-Import Produk dari Sage 300 ke Sistem Odoo.]
+3.  [Proyek 3: Analisis Alur "Lupa Password" (Flowchart & Test Scenario)](#proyek-3-analisis-alur-lupa-password-flowchart--test-scenario)
+
+---
+
+## Proyek 1: Dokumentasi Pengujian Fitur Registrasi Pengguna
+
+Proyek ini menunjukkan kemampuan saya dalam membuat skenario pengujian yang terstruktur untuk fitur registrasi pada **Aplikasi Internal Karyawan**.
+
+### A. Tabel Test Case
+Tabel berikut berisi contoh test case positif dan negatif.
+
+## Test Case Positif
+ID Tes	Prioritas	Modul	Judul Skenario	Prasyarat	Langkah-langkah	Data Uji	Hasil yang Diharapkan
+TC-CUST-01	High	Customer	Membuat Customer baru dengan data minimal	User 'Sales' sudah login.	1. Buka menu Customer & klik 'Create'. 2. Isi data customer tanpa NPWP, Sage Code, Email, HP. 3. Pilih tipe customer. 4. Simpan data.	User: sales Tipe: Fleet	Data customer baru berhasil tersimpan di sistem.
+TC-CUST-02	Medium	Customer	Menambahkan "Unit Owned" pada customer	Customer sudah ada di sistem.	1. Buka data customer yang ada. 2. Masuk ke tab 'Unit Owned'. 3. Tambahkan data unit baru. 4. Simpan.	Customer: ALUMINDO	Data "Unit Owned" berhasil tersimpan di bawah data customer tersebut.
+TC-CUST-03	Medium	Customer	Menambahkan "Contact & Delivery Address"	Customer sudah ada di sistem.	1. Buka data customer. 2. Klik 'Create Contact'. 3. Isi data kontak dan alamat pengiriman. 4. Simpan.	Customer: ALUMINDO	Data kontak dan alamat pengiriman berhasil tersimpan.
+TC-PROS-01	High	Prospek	Membuat Prospek baru	1. User 'Sales' sudah login. 2. Customer & Produk sudah ada.	1. Buka menu Prospek & klik 'Create'. 2. Pilih customer yang relevan. 3. Tambahkan produk ke line prospek. 4. Simpan.	Produk: MH	Data prospek baru berhasil tersimpan.
+TC-PROS-02	Medium	Prospek	Verifikasi tombol info stok produk	Prospek sudah dibuat & memiliki line produk.	1. Buka data prospek. 2. Klik tombol "info" di samping line produk.	-	Muncul jendela pop-up yang menampilkan detail stok on hand produk tersebut.
+
+## Test Case Negatif
+
+| **ID Tes**   | **Prioritas** | **Modul**   | **Judul Skenario** | **Prasyarat** | **Langkah-langkah** | **Data Uji** | **Hasil yang Diharapkan** |
+| ------------ | ------------- | ----------- | ------------------ | ------------- | ------------------- | ------------ |------------- |
+| TC-CUST-04-N | High          | Customer    | Membuat Customer dengan nama kosong | User 'Sales' sudah login. | 1. Buka menu Customer & klik 'Create'.<br>2. Biarkan field 'Nama Customer' kosong.<br>3. Isi field lainnya.<br>4. Simpan data.        | Nama: (kosong)           | Sistem menampilkan pesan error validasi, misalnya, *"Nama Customer wajib diisi."* dan data tidak tersimpan.                                          |
+| TC-CUST-05-N | Medium        | Customer    | Menambahkan "Unit Owned" dengan format salah       | Customer sudah ada di sistem.                                                                                      | 1. Buka data customer.<br>2. Masuk ke tab 'Unit Owned'.<br>3. Isi field yang seharusnya angka dengan teks.<br>4. Simpan.              | Tahun Unit: duaribu      | Sistem menampilkan pesan error validasi, misalnya, *"Tahun Unit harus berupa angka."* dan data tidak tersimpan.                                      |
+| TC-PROS-04-N | High          | Prospek     | Menyimpan Prospek tanpa menambahkan produk         | 1. User 'Sales' sudah login.<br>2. Customer sudah dipilih.                                                         | 1. Buka menu Prospek & klik 'Create'.<br>2. Pilih customer.<br>3. Jangan tambahkan produk apapun.<br>4. Klik 'Simpan'.                | -                        | Sistem menampilkan pesan error, misalnya, *"Minimal harus ada 1 produk di dalam prospek."* dan data tidak tersimpan.                                 |
+| TC-QUO-05-N  | High          | Quotation   | Menginput diskon melebihi wewenang                 | 1. User 'Sales' sudah login.<br>2. Quotation sudah dibuat.                                                         | 1. Buka Quotation.<br>2. Pada line produk, masukkan nilai diskon yang lebih tinggi dari batas wewenang user Sales.<br>3. Coba simpan. | User: sales, Diskon: 50% | Sistem menolak inputan dan menampilkan pesan error, misalnya, *"Diskon melebihi batas wewenang Anda."*                                               |
+| TC-QUO-06-N  | High          | Quotation   | Membuat Quotation untuk customer tanpa Price List  | Customer 'X' ada di sistem tetapi tidak memiliki Price List yang terkonfigurasi.                                   | 1. Buat Prospek baru.<br>2. Pilih Customer 'X'.<br>3. Buat Quotation dari Prospek tersebut.                                           | Customer: X              | Sistem menampilkan pesan peringatan yang jelas, misalnya, *"Pricelist tidak ditemukan untuk customer ini."*                                          |
+| TC-APP-04-N  | High          | Approval    | User Sales mencoba menyetujui approval-nya sendiri | 1. User 'Sales' sudah login.<br>2. Quotation yang butuh approval sudah dibuat oleh user tersebut.                  | 1. Buka Quotation yang menunggu approval.<br>2. Cari dan coba klik tombol 'Approve'.                                                  | User: sales              | Tombol 'Approve' tidak terlihat atau tidak bisa diklik (*disabled*) untuk user yang mengajukan.                                                      |
+| TC-APP-05-N  | Medium        | Approval    | User BM yang tidak berkepentingan mencoba approve  | 1. User 'BM B' sudah login.<br>2. Ada Quotation yang menunggu approval dari 'BM A'.                                | 1. User 'BM B' membuka Quotation tersebut.<br>2. Mencoba klik tombol 'Approve'.                                                       | User: bm_b               | Sistem menampilkan pesan error, misalnya, *"Anda tidak memiliki wewenang untuk approval ini."*                                                       |
+| TC-SO-04-N   | High          | Sales Order | Membuat SO dari Quotation yang belum di-approve    | 1. User 'PM' sudah login.<br>2. Ada Quotation dengan status 'Waiting for Approval'.                                | 1. Buka Quotation tersebut.<br>2. Cari tombol 'Create Sales Order'.                                                                   | User: pm                 | Tombol 'Create Sales Order' tidak aktif (*disabled*) atau tidak muncul sama sekali.                                                                  |
+| TC-SO-05-N   | High          | Sales Order | Membuat SO dari Quotation dengan bobot < 70        | 1. User 'PM' sudah login.<br>2. Ada Quotation yang statusnya 'Approved' tetapi bobot prospeknya masih di bawah 70. | 1. Buka Quotation tersebut.<br>2. Cari tombol 'Create Sales Order'.                                                                   | Bobot: 50                | Tombol 'Create Sales Order' tidak aktif (*disabled*) dan sistem menampilkan pesan, misalnya, *"Bobot Prospek harus ≥ 70 untuk membuat Sales Order."* |
+
+### B. Contoh Laporan Bug (Bug Report)
+Berikut adalah contoh laporan bug yang ditemukan selama pengujian `REG-04`.
+
+* **Judul Bug:** [Registrasi] Sistem tidak memberikan pesan error ketika NIK diisi dengan karakter alfabet.
+* **Severity:** Major
+* **Langkah Reproduksi:**
+    1.  Buka halaman registrasi karyawan.
+    2.  Isi nama lengkap dan email dengan benar.
+    3.  Isi field NIK dengan teks "iniformatniksalah".
+    4.  Isi password.
+    5.  Klik tombol "Daftar".
+* **Hasil Aktual:** Sistem loading sebentar lalu crash dengan halaman error 500.
+* **Hasil yang Diharapkan:** Sistem seharusnya menampilkan pesan error validasi di bawah field NIK, seperti "NIK hanya boleh berisi angka."
+* **Screenshot:**
+    ![Contoh Screenshot Error 500](https://i.imgur.com/bWgmN2j.png)
+    ---
+
+### Proyek 2: Validasi Data Product Pricelist dengan menggunakan SQL Query
+Proyek ini mendemonstrasikan kemampuan saya dalam menggunakan SQL Query untuk melakukan validasi data pada modul Product Pricelist.
+
+## Query digunakan untuk:
+Memperbarui data pricelist tertentu (misalnya menghapus kategori bisnis dan mengaktifkan flag khusus).
+Melakukan pencarian terhadap semua pricelist yang memiliki nama mengandung kata "Sparepart" untuk memastikan data tersimpan dan terfilter dengan benar di database.
+
+### Skenario Validasi
+Memperbarui data pricelist tertentu (misalnya menghapus kategori bisnis dan mengaktifkan flag khusus).
+
+  ```update product_pricelist 
+  set ktg_business_category_id = null, 
+    ktg_is_pricelist_spss = true 
+  where id = 123;
+   ```
+
+Fungsinya
+1. Mengosongkan kolom ktg_business_category_id (set jadi NULL).
+2. Mengubah kolom ktg_is_pricelist_spss jadi TRUE.
+3. Hanya untuk baris dengan id = 123 di tabel product_pricelist.
+4. Mengubah kolom ktg_is_pricelist_spss jadi TRUE.
+Artinya: kamu lagi update data pricelist tertentu supaya business category-nya dihapus dan flag is_pricelist_spss diaktifkan.
+
+
+  ```select name->>'en_US' as name, * 
+    from product_pricelist 
+  where name->>'en_US' like '%Sparepart%';
+  ```
+
+Fungsinya:
+1. Mengambil semua data dari tabel product_pricelist.
+2. Tapi hanya data yang name (bahasa Inggris en_US) mengandung kata Sparepart.
+3. Juga mengubah kolom name (yang berupa JSON) supaya tampil sebagai teks biasa name.
+
+---
+
+## Proyek 3: Analisis Alur "Lupa Password" (Flowchart & Test Scenario)
+
+Proyek ini menunjukkan pemahaman saya dalam menerjemahkan diagram alur proses (Flowchart) menjadi skenario pengujian yang komprehensif.
+
+### Flowchart Proses
+Berikut adalah flowchart sederhana untuk fitur "Lupa Password".
+![Flowchart Lupa Password](https://i.imgur.com/k27xLoR.png)
+### Skenario Tes Turunan dari Flowchart
+Berdasarkan flowchart di atas, saya merancang beberapa skenario pengujian utama:
+1.  **Jalur Sukses (Happy Path):**
+    * Pengguna memasukkan email yang terdaftar.
+    * Pengguna menerima email dan mengklik link reset.
+    * Pengguna berhasil membuat password baru.
+2.  **Jalur Alternatif:**
+    * Pengguna memasukkan email yang **tidak** terdaftar di sistem.
+3.  **Jalur Pengecualian (Exception Path):**
+    * Pengguna mengklik link reset password yang sudah kadaluwarsa.
+    * Pengguna mencoba mereset password baru yang tidak memenuhi kriteria (misal: kurang dari 8 karakter).
+

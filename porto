@@ -14,13 +14,13 @@ Memiliki pengetahuan pada pemanfaatan AI dan automasi untuk meningkatkan efisien
 ---
 
 ### Daftar Proyek Portofolio
-1.  [Proyek 1: Dokumentasi skenario pengujian untuk Negative Testing pada modul Customer, Prospek, Quotation, Approval, dan Sales Order di sistem CRM/ERP. ]
+1.  [Proyek 1: Dokumentasi skenario pengujian untuk Positive dan Negative Testing pada modul Customer, Prospek, Quotation, Approval, dan Sales Order di sistem CRM/ERP. ]
 2.  [Proyek 2: Validasi Data Pasca-Import Produk dari Sage 300 ke Sistem Odoo.]
 3.  [Proyek 3: Analisis Alur "Lupa Password" (Flowchart & Test Scenario)](#proyek-3-analisis-alur-lupa-password-flowchart--test-scenario)
 
 ---
 
-## Proyek 1: Dokumentasi Pengujian Fitur Registrasi Pengguna
+## Proyek 1: Dokumentasi Pengujian Positive dan Negative Testing pada modul Customer, Prospek, Quotation, Approval, dan Sales Order.
 
 Proyek ini menunjukkan kemampuan saya dalam membuat skenario pengujian yang terstruktur untuk fitur registrasi pada **Aplikasi Internal Karyawan**.
 
@@ -28,15 +28,15 @@ Proyek ini menunjukkan kemampuan saya dalam membuat skenario pengujian yang ters
 Tabel berikut berisi contoh test case positif dan negatif.
 
 ## Test Case Positif
-ID Tes	Prioritas	Modul	Judul Skenario	Prasyarat	Langkah-langkah	Data Uji	Hasil yang Diharapkan
-TC-CUST-01	High	Customer	Membuat Customer baru dengan data minimal	User 'Sales' sudah login.	1. Buka menu Customer & klik 'Create'. 2. Isi data customer tanpa NPWP, Sage Code, Email, HP. 3. Pilih tipe customer. 4. Simpan data.	User: sales Tipe: Fleet	Data customer baru berhasil tersimpan di sistem.
-TC-CUST-02	Medium	Customer	Menambahkan "Unit Owned" pada customer	Customer sudah ada di sistem.	1. Buka data customer yang ada. 2. Masuk ke tab 'Unit Owned'. 3. Tambahkan data unit baru. 4. Simpan.	Customer: ALUMINDO	Data "Unit Owned" berhasil tersimpan di bawah data customer tersebut.
-TC-CUST-03	Medium	Customer	Menambahkan "Contact & Delivery Address"	Customer sudah ada di sistem.	1. Buka data customer. 2. Klik 'Create Contact'. 3. Isi data kontak dan alamat pengiriman. 4. Simpan.	Customer: ALUMINDO	Data kontak dan alamat pengiriman berhasil tersimpan.
-TC-PROS-01	High	Prospek	Membuat Prospek baru	1. User 'Sales' sudah login. 2. Customer & Produk sudah ada.	1. Buka menu Prospek & klik 'Create'. 2. Pilih customer yang relevan. 3. Tambahkan produk ke line prospek. 4. Simpan.	Produk: MH	Data prospek baru berhasil tersimpan.
-TC-PROS-02	Medium	Prospek	Verifikasi tombol info stok produk	Prospek sudah dibuat & memiliki line produk.	1. Buka data prospek. 2. Klik tombol "info" di samping line produk.	-	Muncul jendela pop-up yang menampilkan detail stok on hand produk tersebut.
+| ID Tes       | Prioritas | Modul     | Judul Skenario                                | Prasyarat                                                                 | Langkah-langkah                                                                                                                                       | Data Uji                     | Hasil yang Diharapkan                                                                 |
+|--------------|-----------|-----------|-----------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------|
+| TC-CUST-01   | High      | Customer  | Membuat Customer baru dengan data minimal      | User 'Sales' sudah login.                                                  | 1. Buka menu Customer & klik 'Create'.<br>2. Isi data customer tanpa NPWP, Sage Code, Email, HP.<br>3. Pilih tipe customer.<br>4. Simpan data.        | User: sales<br>Tipe: Fleet   | Data customer baru berhasil tersimpan di sistem.                                      |
+| TC-CUST-02   | Medium    | Customer  | Menambahkan "Unit Owned" pada customer         | Customer sudah ada di sistem.                                              | 1. Buka data customer yang ada.<br>2. Masuk ke tab 'Unit Owned'.<br>3. Tambahkan data unit baru.<br>4. Simpan.                                        | Customer: ALUMINDO            | Data "Unit Owned" berhasil tersimpan di bawah data customer tersebut.                  |
+| TC-CUST-03   | Medium    | Customer  | Menambahkan "Contact & Delivery Address"       | Customer sudah ada di sistem.                                              | 1. Buka data customer.<br>2. Klik 'Create Contact'.<br>3. Isi data kontak dan alamat pengiriman.<br>4. Simpan.                                        | Customer: ALUMINDO            | Data kontak dan alamat pengiriman berhasil tersimpan.                                  |
+| TC-PROS-01   | High      | Prospek   | Membuat Prospek baru                           | 1. User 'Sales' sudah login.<br>2. Customer & Produk sudah ada.            | 1. Buka menu Prospek & klik 'Create'.<br>2. Pilih customer yang relevan.<br>3. Tambahkan produk ke line prospek.<br>4. Simpan.                        | Produk: MH                    | Data prospek baru berhasil tersimpan.                                                  |
+| TC-PROS-02   | Medium    | Prospek   | Verifikasi tombol info stok produk             | Prospek sudah dibuat & memiliki line produk.                               | 1. Buka data prospek.<br>2. Klik tombol "info" di samping line produk.                                                                                | -                             | Muncul jendela pop-up yang menampilkan detail stok on hand produk tersebut.            |
 
 ## Test Case Negatif
-
 | **ID Tes**   | **Prioritas** | **Modul**   | **Judul Skenario** | **Prasyarat** | **Langkah-langkah** | **Data Uji** | **Hasil yang Diharapkan** |
 | ------------ | ------------- | ----------- | ------------------ | ------------- | ------------------- | ------------ |------------- |
 | TC-CUST-04-N | High          | Customer    | Membuat Customer dengan nama kosong | User 'Sales' sudah login. | 1. Buka menu Customer & klik 'Create'.<br>2. Biarkan field 'Nama Customer' kosong.<br>3. Isi field lainnya.<br>4. Simpan data.        | Nama: (kosong)           | Sistem menampilkan pesan error validasi, misalnya, *"Nama Customer wajib diisi."* dan data tidak tersimpan.                                          |
@@ -49,22 +49,6 @@ TC-PROS-02	Medium	Prospek	Verifikasi tombol info stok produk	Prospek sudah dibua
 | TC-SO-04-N   | High          | Sales Order | Membuat SO dari Quotation yang belum di-approve    | 1. User 'PM' sudah login.<br>2. Ada Quotation dengan status 'Waiting for Approval'.                                | 1. Buka Quotation tersebut.<br>2. Cari tombol 'Create Sales Order'.                                                                   | User: pm                 | Tombol 'Create Sales Order' tidak aktif (*disabled*) atau tidak muncul sama sekali.                                                                  |
 | TC-SO-05-N   | High          | Sales Order | Membuat SO dari Quotation dengan bobot < 70        | 1. User 'PM' sudah login.<br>2. Ada Quotation yang statusnya 'Approved' tetapi bobot prospeknya masih di bawah 70. | 1. Buka Quotation tersebut.<br>2. Cari tombol 'Create Sales Order'.                                                                   | Bobot: 50                | Tombol 'Create Sales Order' tidak aktif (*disabled*) dan sistem menampilkan pesan, misalnya, *"Bobot Prospek harus ≥ 70 untuk membuat Sales Order."* |
 
-### B. Contoh Laporan Bug (Bug Report)
-Berikut adalah contoh laporan bug yang ditemukan selama pengujian `REG-04`.
-
-* **Judul Bug:** [Registrasi] Sistem tidak memberikan pesan error ketika NIK diisi dengan karakter alfabet.
-* **Severity:** Major
-* **Langkah Reproduksi:**
-    1.  Buka halaman registrasi karyawan.
-    2.  Isi nama lengkap dan email dengan benar.
-    3.  Isi field NIK dengan teks "iniformatniksalah".
-    4.  Isi password.
-    5.  Klik tombol "Daftar".
-* **Hasil Aktual:** Sistem loading sebentar lalu crash dengan halaman error 500.
-* **Hasil yang Diharapkan:** Sistem seharusnya menampilkan pesan error validasi di bawah field NIK, seperti "NIK hanya boleh berisi angka."
-* **Screenshot:**
-    ![Contoh Screenshot Error 500](https://i.imgur.com/bWgmN2j.png)
-    ---
 
 ### Proyek 2: Validasi Data Product Pricelist dengan menggunakan SQL Query
 Proyek ini mendemonstrasikan kemampuan saya dalam menggunakan SQL Query untuk melakukan validasi data pada modul Product Pricelist.
@@ -102,22 +86,28 @@ Fungsinya:
 
 ---
 
-## Proyek 3: Analisis Alur "Lupa Password" (Flowchart & Test Scenario)
+### Proyek 3: Analisis Alur Kerja & Hak Akses Pengguna (Studi Kasus: Sistem CRM)
+## Link Gambar : https://drive.google.com/file/d/1lBxgUyG-dKvn67-CVGJuSbCVPKOl09aD/view?usp=sharing
+## Objektif Proyek:
+Menganalisis sebuah flowchart alur kerja manajemen pelanggan untuk mengevaluasi efektivitas, keamanan, dan potensi peningkatannya. Proyek ini mendemonstrasikan kemampuan saya dalam menerjemahkan diagram teknis menjadi analisis proses bisnis dan memberikan rekomendasi strategis dari sudut pandang Quality Assurance.
 
-Proyek ini menunjukkan pemahaman saya dalam menerjemahkan diagram alur proses (Flowchart) menjadi skenario pengujian yang komprehensif.
+#Ringkasan Alur Kerja
+Flowchart ini menggambarkan sistem Kontrol Akses Berbasis Peran (RBAC) dengan tiga tingkatan hak akses untuk mengelola data pelanggan:
 
-### Flowchart Proses
-Berikut adalah flowchart sederhana untuk fitur "Lupa Password".
-![Flowchart Lupa Password](https://i.imgur.com/k27xLoR.png)
-### Skenario Tes Turunan dari Flowchart
-Berdasarkan flowchart di atas, saya merancang beberapa skenario pengujian utama:
-1.  **Jalur Sukses (Happy Path):**
-    * Pengguna memasukkan email yang terdaftar.
-    * Pengguna menerima email dan mengklik link reset.
-    * Pengguna berhasil membuat password baru.
-2.  **Jalur Alternatif:**
-    * Pengguna memasukkan email yang **tidak** terdaftar di sistem.
-3.  **Jalur Pengecualian (Exception Path):**
-    * Pengguna mengklik link reset password yang sudah kadaluwarsa.
-    * Pengguna mencoba mereset password baru yang tidak memenuhi kriteria (misal: kurang dari 8 karakter).
+#Branch Manager: Bertindak sebagai pengelola penuh di cabangnya dengan hak akses untuk melihat semua data, serta menambah dan memvalidasi pelanggan baru.
+Sales: Berperan sebagai kreator data yang hanya dapat menambah pelanggan baru dan melihat data yang mereka buat sendiri.
+Admin Sales: Berfungsi sebagai pemantau (auditor) dengan hak akses read-only untuk melihat semua data pelanggan dari semua Sales, tanpa bisa menambah atau mengubah data.
 
+#Analisis dan Rekomendasi
+Sebagai seorang QA, saya menganalisis alur ini tidak hanya dari sisi fungsional, tetapi juga dari sisi ketahanan (robustness) dan kelengkapan proses bisnisnya.
+
+#Kekuatan Alur Kerja:
+Pemisahan Tugas yang Jelas: Sistem ini secara efektif memisahkan wewenang antara manajerial (BM), eksekusi (Sales), dan audit (Admin Sales), yang merupakan praktik terbaik untuk integritas data.
+Penerapan Prinsip Least Privilege: Setiap peran diberikan hak akses minimum yang diperlukan untuk melakukan tugasnya, yang secara signifikan mengurangi risiko kesalahan atau penyalahgunaan data.
+Adanya Kontrol Kualitas: Langkah "Validasi Data" yang ada pada alur BM dan Sales menunjukkan adanya mekanisme bawaan untuk menjaga kualitas data sejak awal.
+
+#Rekomendasi & Skenario Lanjutan untuk Diuji:
+Setelah menganalisis "jalur sukses" (happy path) yang digambarkan, saya mengidentifikasi beberapa area untuk peningkatan dan pengujian lebih lanjut:
+Alur untuk Edit & Hapus Data: Flowchart saat ini hanya mencakup proses pembuatan data. Perlu didefinisikan alur untuk memperbarui data (misalnya, pelanggan pindah alamat) dan menonaktifkan/menghapus data. Skenario Tes: Apakah Sales bisa mengedit data milik Sales lain? Siapa yang berhak menghapus data?
+Mekanisme Transfer Pelanggan: Tidak ada alur yang menjelaskan apa yang terjadi jika seorang Sales resign. Perlu ada fitur bagi Branch Manager untuk mengalihkan kepemilikan pelanggan ke Sales lain untuk memastikan kelangsungan bisnis. Skenario Tes: Bagaimana proses re-assign pelanggan dari Sales A ke Sales B?
+Kebutuhan Kolaborasi Tim: Sistem saat ini mengisolasi data per Sales. Bagaimana jika dua Sales perlu berkolaborasi untuk satu pelanggan besar? Perlu dipertimbangkan adanya fitur untuk "berbagi akses" pelanggan secara kasuistik. Skenario Tes: Uji coba fitur 'Share Customer' antara dua akun Sales.

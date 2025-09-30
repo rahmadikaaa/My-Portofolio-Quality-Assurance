@@ -91,7 +91,7 @@ WHERE name->>'en_US' LIKE '%Sparepart%';
 ---
 
 ## Proyek 3: Analisis Alur Kerja & Hak Akses Pengguna
-
+![Flowchart](./images/flowchart.png)  
 📌 [Link Flowchart](https://drive.google.com/file/d/1lBxgUyG-dKvn67-CVGJuSbCVPKOl09aD/view?usp=sharing)
 
 ### A. Ringkasan Alur

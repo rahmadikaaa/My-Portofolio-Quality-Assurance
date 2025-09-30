@@ -15,6 +15,13 @@ Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, m
   - Tingkat keberhasilan navigasi end-to-end > 95%.  
   - Integritas data harga (tidak ada teks terpotong/salah parsing).  
 
+📷 **Contoh Dasar Lingkup Uji**  
+Sebagai bagian dari penentuan lingkup, berikut setup awal pada **SIGOS Vendor Heavy Desktop**.  
+Konfigurasi ini mendefinisikan node lokasi (*Palembang*), operator (*XL/Excelcom*), serta nomor uji yang akan digunakan.  
+Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.  
+
+![Setup Lingkup Pengujian](./images/fase1_setup_sigospalembang.png)  
+
 ---
 
 ## 🛠️ Fase II – Konfigurasi Lingkungan & Desain Skenario Uji

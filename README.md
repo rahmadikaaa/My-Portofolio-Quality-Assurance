@@ -9,14 +9,14 @@ Repositori ini berisi kumpulan pengalaman, studi kasus, dan contoh pekerjaan say
 
 ##  Navigasi Portofolio
 
-- Manual Testing](./Manual%20Testing.md)  
+- 📑 [Manual Testing](./Manual%20Testing.md)  
   Berisi test case, bug report, dan dokumentasi proses pengujian manual.  
 
-- Automation Testing](./Automation%20Testing.md)  
+- 🤖 [Automation Testing](./Automation%20Testing.md)  
   Berisi skenario uji otomatisasi, penggunaan framework, dan implementasi CI/CD.  
 
-- Portofolio Lama](./Portofolio%20Rahmadika)  
-  (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)  
+- 📝 [Portofolio Lama](./Portofolio%20Rahmadika)  
+  (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)   
 
 ---
 

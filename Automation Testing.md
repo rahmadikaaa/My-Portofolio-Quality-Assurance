@@ -67,28 +67,29 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
 ##  Fase IV – Analitik Tingkat Lanjut & Optimalisasi Berkelanjutan
 **Fokus:** Mengubah data harga menjadi insight.  
 
-- **Analisis Harga Regional:**
-  - Bandingkan harga paket antar kota.  
-  - Identifikasi variasi tarif (contoh: Paket A Rp50.000 di Jakarta, Rp60.000 di Bandung).  
+**Visualisasi Rekapitulasi**
+![Analitik Rekapitulasi](./images/fase4_analitik.png)
 
-- **Integritas Data:**
-  - Validasi parsing 100% (tidak ada teks terpotong karena batas 182 karakter).  
+### Ringkasan Statistik
+- Total Eksekusi: **8,139**
+- PASS: **3,303 (41%)**
+- FAIL: **3,431 (42%)**
+- INCONC: **1,405 (17%)**
 
-- **Insight Bisnis:**
-  - Laporan tren harga & anomali tarif.  
-  - Rekomendasi optimasi channel USSD.  
+### Insight Kota
+- ✅ **Kinerja Baik:** Ngurah Rai Bali (100%), Bandung (99%), Malang (99%).  
+- ⚠️ **Perlu Investigasi:** Makassar (50%), Samarinda (35%).  
+- 🚨 **Kritis:** Balikpapan (0%).  
 
 ---
 
 ## ✅ Hasil & Dampak
 - Sistem crawling otomatis menghasilkan **database harga paket real-time** multi-kota.  
-- Latensi rata-rata tercatat **< 4 detik** per layer, sesuai KPI.  
 - Data harga digunakan untuk **analisis kompetitor** dan **penyesuaian strategi produk**.  
 
 ---
 
 ## 💡 Peran Saya
-- Mendesain metodologi crawling multi-geografis.  
 - Membuat skenario navigasi USSD & parsing hasil menu.  
 - Membangun pipeline eksekusi otomatis & integrasi data ke dashboard.  
-- Menyusun laporan analisis variasi tarif untuk stakeholder.  
+- Menyusun laporan analisis.  

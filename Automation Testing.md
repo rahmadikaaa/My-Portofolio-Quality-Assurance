@@ -15,6 +15,16 @@ Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, m
   - Tingkat keberhasilan navigasi end-to-end > 95%.  
   - Integritas data harga (tidak ada teks terpotong/salah parsing).  
 
+---
+
+## 🛠️ Fase II – Konfigurasi Lingkungan & Desain Skenario Uji
+**Fokus:** Siapkan probe, skenario, dan skrip crawling.  
+
+
+- **Arsitektur:**
+  - **Probe Terdistribusi:** SIM fisik ditempatkan di kota target, dijalankan dengan perangkat uji (contoh: Mobileum/SIGOS probe).  
+  - **Pusat Kontrol:** SITE (Integrated Test Environment) untuk orkestrasi eksekusi.  
+
 📷 **Contoh Dasar Lingkup Uji**  
 Sebagai bagian dari penentuan lingkup, berikut setup awal pada **SIGOS Vendor Heavy Desktop**.  
 Konfigurasi ini mendefinisikan node lokasi (*Palembang*), operator (*XL/Excelcom*), serta nomor uji yang akan digunakan.  
@@ -22,14 +32,6 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
 
 ![Setup Lingkup Pengujian](./images/isat_pale.png)  
 
----
-
-## 🛠️ Fase II – Konfigurasi Lingkungan & Desain Skenario Uji
-**Fokus:** Siapkan probe, skenario, dan skrip crawling.  
-
-- **Arsitektur:**
-  - **Probe Terdistribusi:** SIM fisik ditempatkan di kota target, dijalankan dengan perangkat uji (contoh: Mobileum/SIGOS probe).  
-  - **Pusat Kontrol:** SITE (Integrated Test Environment) untuk orkestrasi eksekusi.  
 
 - **Desain Skenario:**
   1. Dial kode akses (contoh: `*363#` untuk Telkomsel).  

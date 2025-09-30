@@ -20,7 +20,7 @@ Sebagai bagian dari penentuan lingkup, berikut setup awal pada **SIGOS Vendor He
 Konfigurasi ini mendefinisikan node lokasi (*Palembang*), operator (*XL/Excelcom*), serta nomor uji yang akan digunakan.  
 Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.  
 
-![Setup Lingkup Pengujian](./images/fase1_setup_sigospalembang.png)  
+![Setup Lingkup Pengujian](./images/isat_pale.png)  
 
 ---
 

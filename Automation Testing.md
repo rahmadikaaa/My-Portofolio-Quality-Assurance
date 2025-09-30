@@ -1,12 +1,12 @@
-# 📊 Portofolio Proyek: Crawling Data Harga Paket USSD/UMB Multi-Kota
+# Portofolio Proyek: Crawling Data Harga Paket USSD/UMB Multi-Kota
 
-## 🎯 Tujuan
-Mengembangkan sistem **Otomatisasi USSD Terdistribusi** untuk crawling data harga paket internet dari berbagai operator seluler (Telkomsel, XL, Indosat, Tri, Smartfren) secara **multi-geografis**.  
-Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, mendukung analisis variasi tarif regional (*De-Averaging*).
+## Tujuan
+Mengembangkan sistem **Otomatisasi USSD Terdistribusi** untuk crawling data harga paket internet dari berbagai operator seluler (Telkomsel, XL, Indosat, Tri, Smartfren) secara multi-geografis.  
+Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, mendukung analisis variasi tarif regional.
 
 ---
 
-## 🧭 Fase I – Penentuan Lingkup Strategis & KPI
+## Fase I – Penentuan Lingkup Strategis & KPI
 **Fokus:** Apa yang diuji dan bagaimana menilai keberhasilan.  
 
 - **Lingkup:** Data harga paket internet dari 5 operator di 6 kota besar (Jakarta, Bandung, Surabaya, Bali, Medan, Makassar).  
@@ -17,15 +17,16 @@ Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, m
 
 ---
 
-## 🛠️ Fase II – Konfigurasi Lingkungan & Desain Skenario Uji
+## Fase II – Konfigurasi Lingkungan & Desain Skenario Uji
 **Fokus:** Siapkan probe, skenario, dan skrip crawling.  
 
-
 - **Arsitektur:**
-  - **Probe Terdistribusi:** SIM fisik ditempatkan di kota target, dijalankan dengan perangkat uji (contoh: Mobileum/SIGOS probe).  
-  - **Pusat Kontrol:** SITE (Integrated Test Environment) untuk orkestrasi eksekusi.  
+  - **Probe Terdistribusi:**
+    SIM fisik ditempatkan di kota target, dijalankan dengan perangkat uji (contoh: Mobileum/SIGOS probe).  
+  - **Pusat Kontrol:**
+    SITE (Integrated Test Environment) untuk orkestrasi eksekusi.  
 
-📷 **Contoh Dasar Lingkup Uji**  
+**Contoh Dasar Lingkup Uji**  
 Sebagai bagian dari penentuan lingkup, berikut setup awal pada **SIGOS Vendor Heavy Desktop**.  
 Konfigurasi ini mendefinisikan node lokasi (*Palembang*), operator (*XL/Excelcom*), serta nomor uji yang akan digunakan.  
 Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.  
@@ -39,7 +40,7 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
   3. Ekstraksi teks dari layar USSD (paket, kuota, harga).  
 
 - **Teknis:**
-  - Skrip dibuat via *scripting studio* atau Python.  
+  - Skrip dibuat via *scripting studio* 
   - Parsing hasil USSD → format JSON.  
   - Contoh hasil parsing:
     ```json
@@ -52,7 +53,7 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
 
 ---
 
-## ⚙️ Fase III – Eksekusi Otomatis & Pemantauan Real-Time
+## Fase III – Eksekusi Otomatis & Pemantauan Real-Time
 **Fokus:** Jalankan crawling di semua kota secara simultan.  
 
 - **Eksekusi Paralel:** Probe di setiap kota menjalankan skenario pada jam terjadwal (contoh: setiap hari pukul 03.00 WIB).  
@@ -63,7 +64,7 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
 
 ---
 
-## 📈 Fase IV – Analitik Tingkat Lanjut & Optimalisasi Berkelanjutan
+##  Fase IV – Analitik Tingkat Lanjut & Optimalisasi Berkelanjutan
 **Fokus:** Mengubah data harga menjadi insight.  
 
 - **Analisis Harga Regional:**

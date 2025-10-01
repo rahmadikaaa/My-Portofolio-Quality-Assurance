@@ -16,7 +16,9 @@ Repositori ini berisi kumpulan pengalaman, studi kasus, dan contoh pekerjaan say
   Berisi skenario uji otomatisasi, penggunaan framework, dan implementasi CI/CD.  
 
 - 📝 [Portofolio Lama](./Portofolio%20Rahmadika)  
-  (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)   
+  (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)
+
+- [  https://github.com/rahmadikaaa/khodam_generator.git](https://github.com/rahmadikaaa/khodam_generator.git)
 
 ---
 

@@ -13,7 +13,7 @@ Repositori ini berisi kumpulan pengalaman, studi kasus, dan contoh pekerjaan say
   Berisi test case, bug report, dan dokumentasi proses pengujian manual.  
 
 - 🤖 [Automation Testing](./Automation%20Testing.md)  
-  Berisi skenario uji otomatisasi, penggunaan framework, dan implementasi CI/CD.  
+  Berisi skenario uji otomatisasi, penggunaan framework.
 
 - 📝 [Portofolio Lama](./Portofolio%20Rahmadika)  
   (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)

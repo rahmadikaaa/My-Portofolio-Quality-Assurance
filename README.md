@@ -3,12 +3,20 @@
 ![QA Engineer](https://img.shields.io/badge/Role-QA%20Engineer-blue) 
 ![Manual Testing](https://img.shields.io/badge/Testing-Manual%20Testing-green) 
 ![Automation Testing](https://img.shields.io/badge/Testing-Automation%20Testing-orange)
-![Python](https://img.shields.io/badge/Language-Python-yellow)
-![Katalon](https://img.shields.io/badge/Tool-Katalon-blueviolet)
 ![n8n](https://img.shields.io/badge/Automation-n8n-red)
 ![Mobileum](https://img.shields.io/badge/Telecom-Mobileum-lightgrey)
 
 Repositori ini berisi kumpulan **pengalaman, studi kasus, dan contoh pekerjaan saya** sebagai **Quality Assurance (QA)** di bidang **Manual Testing** dan **Automation Testing**.
+
+---
+
+🧭 AI Inovator
+
+Saya memiliki ketertarikan yang besar terhadap perkembangan Artificial Intelligence (AI) dan bagaimana teknologi ini dapat diintegrasikan dalam proses software development maupun quality assurance.
+
+Saya mampu membangun aplikasi berbasis AI secara end-to-end (full-stack) — mulai dari perancangan, integrasi API, hingga automasi proses menggunakan n8n.
+
+Tujuan saya adalah menciptakan solusi otomatis yang menghemat waktu, meningkatkan efisiensi, dan memberikan insight berbasis data untuk proses QA maupun bisnis.
 
 ---
 

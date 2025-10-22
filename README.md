@@ -1,7 +1,3 @@
-# Portofolio Quality Assurance - Rahmadika Tri Putera
-Dokumen ini dibuat sebagai respons terhadap lowongan **MIS QA Staff** di **PT Novell Pharmaceutical Laboratories**.  
-Portofolio ini mendemonstrasikan kemampuan saya dalam membuat **skenario pengujian**, **validasi data dengan SQL**, dan **analisis alur kerja**.
-
 Selamat datang di portofolio saya!  
 Repositori ini berisi kumpulan pengalaman, studi kasus, dan contoh pekerjaan saya sebagai **Quality Assurance (QA)** baik di bidang **Manual Testing** maupun **Automation Testing**.  
 
@@ -9,16 +5,21 @@ Repositori ini berisi kumpulan pengalaman, studi kasus, dan contoh pekerjaan say
 
 ##  Navigasi Portofolio
 
-- 📑 [Manual Testing](./Manual%20Testing.md)  
+- [Manual Testing](./Manual%20Testing.md)  
   Berisi test case, bug report, dan dokumentasi proses pengujian manual.  
 
-- 🤖 [Automation Testing](./Automation%20Testing.md)  
+- [Automation Testing](./Automation%20Testing.md)  
   Berisi skenario uji otomatisasi, penggunaan framework.
 
-- 📝 [Portofolio Lama](./Portofolio%20Rahmadika)  
+- 
+
+- [Portofolio Lama](./Portofolio%20Rahmadika)  
   (Hanya catatan redirect, untuk menjaga link lama tetap aktif.)
 
-- [  https://github.com/rahmadikaaa/khodam_generator.git](https://github.com/rahmadikaaa/khodam_generator.git)
+- Portifolio Project - Khodam Generator
+  [  https://github.com/rahmadikaaa/khodam_generator.git](https://github.com/rahmadikaaa/khodam_generator.git)
+
+  
 
 ---
 

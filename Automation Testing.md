@@ -35,7 +35,7 @@ Hal ini memastikan KPI nantinya bisa diukur sesuai target lingkup pengujian.
 
 
 - **Desain Skenario:**
-  1. Dial kode akses (contoh: `*363#` untuk Telkomsel).  
+  1. Dial kode akses (contoh: `*363#` untuk Axis).  
   2. Navigasi menu otomatis (misal pilih `1 → 2 → 3`).  
   3. Ekstraksi teks dari layar USSD (paket, kuota, harga).  
 

@@ -1,7 +1,7 @@
 # Portofolio Proyek: Crawling Data Harga Paket USSD/UMB Multi-Kota
 
 ## Tujuan
-Mengembangkan sistem **Otomatisasi USSD Terdistribusi** untuk crawling data harga paket internet dari berbagai operator seluler (Telkomsel, XL, Indosat, Tri, Smartfren) secara multi-geografis.  
+Mengembangkan sistem **Otomatisasi USSD Terdistribusi** untuk crawling data harga paket internet dari berbagai operator seluler ( XL, Indosat, Tri, Smartfren) secara multi-geografis.  
 Sistem ini memungkinkan pengumpulan harga yang akurat sesuai lokasi pelanggan, mendukung analisis variasi tarif regional.
 
 ---

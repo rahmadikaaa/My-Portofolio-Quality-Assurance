@@ -2,7 +2,7 @@
 
 ## 🗭 Background
 
-Proyek ini bertujuan untuk **mengotomatisasi pengumpulan data performa layanan operator kompetitor** (Telkomsel, XL, Indosat, AXIS, Smartfren) menggunakan platform **Mobileum (SIGOS) Active Testing**.
+Proyek ini bertujuan untuk **mengotomatisasi pengumpulan data performa layanan operator kompetitor** (XL, Indosat, AXIS, Smartfren) menggunakan platform **Mobileum (SIGOS) Active Testing**.
 Melalui automasi di **Studio64**, sistem mengeksekusi pengujian jaringan dan aplikasi operator secara paralel untuk mendapatkan data performa serta pengalaman pengguna (*Quality of Experience / QoE*) secara objektif.
 
 🎯 **Tujuan utama:**

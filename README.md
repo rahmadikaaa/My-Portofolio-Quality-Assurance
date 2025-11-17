@@ -1,4 +1,9 @@
-# 👋 Selamat Datang di Portofolio Saya  
+
+Halo, Saya Rahmadika!
+
+Saya adalah seorang Quality Assurance Engineer yang berfokus pada Manual & Automation Testing, serta aktif membangun solusi AI-powered automation untuk meningkatkan efisiensi proses software development.
+
+Saya memadukan QA mindset, automation engineering, dan AI integration untuk menciptakan workflow yang lebih cepat, scalable, dan minim error.
 
 ![QA Engineer](https://img.shields.io/badge/Role-QA%20Engineer-blue) 
 ![Manual Testing](https://img.shields.io/badge/Testing-Manual%20Testing-green) 
@@ -6,17 +11,27 @@
 ![n8n](https://img.shields.io/badge/Automation-n8n-red)
 ![Mobileum](https://img.shields.io/badge/Telecom-Mobileum-lightgrey)
 
-Repositori ini berisi kumpulan **pengalaman, studi kasus, dan contoh pekerjaan saya** sebagai **Quality Assurance (QA)** di bidang **Manual Testing** dan **Automation Testing**.
-
 ---
 
-🧭 AI Inovator
+Apa yang Saya Kerjakan
+🧪 Quality Assurance
 
-Saya memiliki ketertarikan yang besar terhadap perkembangan Artificial Intelligence (AI) dan bagaimana teknologi ini dapat diintegrasikan dalam proses software development maupun quality assurance.
+Perancangan & eksekusi test case
+Regression, functional, & system testing
+Bug hunting & defect lifecycle management
 
-Saya mampu membangun aplikasi berbasis AI secara end-to-end (full-stack) — mulai dari perancangan, integrasi API, hingga automasi proses menggunakan n8n.
+🤖 Automation Testing
 
-Tujuan saya adalah menciptakan solusi otomatis yang menghemat waktu, meningkatkan efisiensi, dan memberikan insight berbasis data untuk proses QA maupun bisnis.
+Selenium, Python, Qxf2 Framework
+API testing automation
+Data validation (SQL automation)
+
+⚡ AI & Workflow Automation
+Membangun aplikasi AI end-to-end
+Automasi proses QA menggunakan n8n
+Integrasi API (Gemini, GPT, Fal.ai, dan lainnya)
+Real-time logging, alerting, & report generator
+Tujuan saya: mengurangi repetitive tasks, mempercepat testing, dan meningkatkan kualitas by design.
 
 ---
 
@@ -70,7 +85,3 @@ Tujuan saya adalah menciptakan solusi otomatis yang menghemat waktu, meningkatka
 - 🌐 [LinkedIn](https://www.linkedin.com/in/rahmadikaaa)  
 - 💻 [GitHub](https://github.com/rahmadikaaa)  
 - 📧 **rahmadika.triputera@gmail.com**
-
----
-
-> Dibuat dengan semangat pembelajaran dan eksplorasi dalam dunia Quality Assurance, Automation, dan Data-driven Testing.

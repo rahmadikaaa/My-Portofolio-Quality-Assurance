@@ -14,6 +14,8 @@ Saya memadukan QA mindset, automation engineering, dan AI integration untuk menc
 ---
 
 Apa yang Saya Kerjakan
+
+
 🧪 Quality Assurance
 Perancangan & eksekusi test case
 Regression, functional, & system testing

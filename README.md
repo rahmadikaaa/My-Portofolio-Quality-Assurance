@@ -72,7 +72,6 @@ Tujuan saya: mengurangi repetitive tasks, mempercepat testing, dan meningkatkan 
 | **SKKNI - Standar Kompetensi Kerja Nasional Indonesia (QA)** | Kementerian Kominfo | 2021 |
 | **TOEFL English Proficiency** | ETS / Lembaga Bahasa | 2020 |
 | **PHP & MySQL Development** | Dicoding / Online Course | 2021 |
-| **Python for Automation** | Coursera / Qxf2 | 2022 |
 | **Katalon Practitioner Certification** | Katalon Academy | 2024 |
 | **Google AI Essentials** | Google / Coursera | 2024 |
 

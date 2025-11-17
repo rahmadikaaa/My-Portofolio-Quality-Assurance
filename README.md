@@ -15,13 +15,11 @@ Saya memadukan QA mindset, automation engineering, dan AI integration untuk menc
 
 Apa yang Saya Kerjakan
 🧪 Quality Assurance
-
 Perancangan & eksekusi test case
 Regression, functional, & system testing
 Bug hunting & defect lifecycle management
 
 🤖 Automation Testing
-
 Selenium, Python, Qxf2 Framework
 API testing automation
 Data validation (SQL automation)

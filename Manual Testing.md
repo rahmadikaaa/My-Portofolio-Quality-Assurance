@@ -1,11 +1,3 @@
-# Portofolio Quality Assurance - Rahmadika Tri Putera
-
-> Dokumen ini dibuat sebagai respons terhadap lowongan **MIS QA Staff** di **PT Novell Pharmaceutical Laboratories**.
-> Portofolio ini mendemonstrasikan kemampuan saya dalam membuat skenario pengujian, pemahaman SQL Query, dan analisis diagram sistem.
-
-**Kontak:** [LinkedIn](https://www.linkedin.com/in/rahmadikaaa) | [GitHub](https://github.com/rahmadikaaa) | [rahmadika.putera@gmail.com](mailto:rahmadika.putera@gmail.com)
-
----
 
 ## Ringkasan Profesional
 

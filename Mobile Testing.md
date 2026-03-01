@@ -11,6 +11,13 @@ Melalui automasi di **Studio64**, sistem mengeksekusi pengujian jaringan dan apl
 * Membandingkan kecepatan, stabilitas, dan penawaran layanan kompetitor.
 * Mengurangi waktu pengumpulan data manual melalui *automation pipeline*.
 
+## 🧪 Scope & Features
+
+* Scraping data kuota, pulsa, dan promo dari aplikasi operator (MyTelkomsel, myXL, AXISnet, Smartfren).
+* Capture tampilan hasil aplikasi (OCR-based verification).
+* Menghitung *response time*, *latency*, dan *success rate*.
+* Menjalankan eksekusi otomatis harian via Test Center.
+
 ---
 
 ## ⚙️ Tools & Technology
@@ -24,14 +31,6 @@ Melalui automasi di **Studio64**, sistem mengeksekusi pengujian jaringan dan apl
 
 ---
 
-## 🧪 Scope & Features
-
-* Scraping data kuota, pulsa, dan promo dari aplikasi operator (MyTelkomsel, myXL, AXISnet, Smartfren).
-* Capture tampilan hasil aplikasi (OCR-based verification).
-* Menghitung *response time*, *latency*, dan *success rate*.
-* Menjalankan eksekusi otomatis harian via Test Center.
-
----
 
 ## 🔁 Test Flow / Architecture (Based on Project Flow Diagram)
 
